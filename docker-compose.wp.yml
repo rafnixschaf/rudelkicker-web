@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  cli:
+    image: rafnixschaf/wp-cli
+    volumes:
+      - ./:/var/www/html
+      - ./docker/run-wp-install.sh:/usr/local/bin/wp-install.sh
+    depends_on:
+      - db
+    command:
+        - wp-install.sh
+    links:
+        - application:application

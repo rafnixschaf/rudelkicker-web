@@ -1,0 +1,14 @@
+{
+  "name": "kreativrudel/template",
+  "type": "project",
+  "authors": [
+    {
+      "name": "kreativrudel",
+      "email": "info@kreativrudel.de"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "vlucas/phpdotenv": "^2.4"
+  }
+}
